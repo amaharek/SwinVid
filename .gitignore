@@ -106,6 +106,15 @@ venv.bak/
 
 train
 data
+work_dir
+work_dir_2
+result_dir_2
+result_dir
+masktrack_rcnn_result_dir
+logs
+results.json
+submission_file.zip
+
 ckpts
 .vscode
 .idea

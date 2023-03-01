@@ -16,7 +16,7 @@ model = dict(
         init_cfg=dict(
             type='Pretrained',
             checkpoint=  # noqa: E251
-            'checkpoints/mask_rcnn_swin_tiny_patch4_window7.pth'  # noqa: E501
+            'checkpoints/mask_rcnn_swin-t-p4-w7_fpn_1x_coco_20210902_120937-9d6b7cfa.pth'  # noqa: E501
         )),
     track_head=dict(
         type='RoITrackHead',
@@ -64,5 +64,5 @@ lr_config = dict(
     warmup_ratio=1.0 / 3,
     step=[8, 11])
 # runtime settings
-total_epochs = 12
-evaluation = dict(metric=['track_segm'], interval=13)
+total_epochs = 1
+evaluation = dict(metric=['track_segm'], interval=1)
